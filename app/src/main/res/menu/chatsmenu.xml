@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/myProfileOption"
+        android:title="My Profile" />
+    <item
+        android:id="@+id/blockedUsersOption"
+        android:title="Blocked Users" />
+    <item
+        android:id="@+id/tellAFriendOption"
+        android:title="Tell a friend" />
+
+    <item
+        android:id="@+id/rateUsOption"
+        android:title="Rate Us" />
+    <item
+        android:id="@+id/logoutOption"
+        android:title="Logout" />
+</menu>

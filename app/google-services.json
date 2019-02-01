@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "628346961866",
+    "firebase_url": "https://the-book-exchange.firebaseio.com",
+    "project_id": "the-book-exchange",
+    "storage_bucket": "the-book-exchange.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628346961866:android:962b90c577b420f1",
+        "android_client_info": {
+          "package_name": "com.futurepastapps.pantnagarbookexchange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628346961866-a4p0ao7dk390lgrd2a688e5hnrhpamcl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.futurepastapps.pantnagarbookexchange",
+            "certificate_hash": "da50d3e684d8f8c15f95e6c006edb900989d9170"
+          }
+        },
+        {
+          "client_id": "628346961866-n67ni841iblu0gie7i0i79b7tdgui91c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArxdiaT02CMs4GxRi46kzd_1oXQBSvw68"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628346961866-n67ni841iblu0gie7i0i79b7tdgui91c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

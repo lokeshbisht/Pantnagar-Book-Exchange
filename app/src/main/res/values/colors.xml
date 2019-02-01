@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#72c0ed</color>
+    <color name="colorPrimaryDark">#5abcf4</color>
+    <color name="colorAccent">#89c3e3</color>
+    <color name="colorInput">#04ebfb</color>
+    <color name="colorbackground">#dedfdf</color>
+    <color name="colorwarning">#fd1b02</color>
+    <color name="colorButtonText">#ffffff</color>
+    <color name="colorDisabledText">#696969</color>
+    <color name="colorHeading">#000000</color>
+    <color name="colorSubHeading">#06ebfb</color>
+    <color name="colorPrimaryLight">#b9dcf1</color>
+    <color name="colorChatReceived">#dfdbdb</color>
+    <color name="colorChatSend">#aedcf6</color>
+    <color name="colorBackground">#ecf4fa</color>
+    <color name="colorFullImageBackground">#d6edfb</color>
+    <color name="colorLoadingBackground">#a7ebf6fb</color>
+    <color name="colorLoading">#2689aa</color>
+    <color name="colorLaunchBackground">#84fbf5</color>
+    <color name="colorHighlightedText">#0a32d0</color>
+    <color name="colorAboutText">#052199</color>
+    <color name="colorButtonBackground">#71bef1</color>
+
+</resources>

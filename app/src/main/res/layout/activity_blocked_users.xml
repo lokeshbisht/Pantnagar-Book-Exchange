@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.futurepastapps.pantnagarbookexchange.BlockedUsersActivity">
+
+    <include
+        android:id="@+id/blockedUsersBar"
+        layout="@layout/appbar" />
+
+    <com.futurepastapps.pantnagarbookexchange.EmptyRecyclerView
+        android:id="@+id/blockedUserView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blockedUsersBar" />
+
+    <RelativeLayout
+        android:id="@+id/blockedUsersEmptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blockedUsersBar"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/blockedUsersEmptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="You have not blocked any user"
+            android:textAlignment="center"
+            android:textColor="@color/colorHeading"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

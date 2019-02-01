@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Pantnagar Book Exchange</string>
+
+    <string name="college_prompt">College</string>
+
+    <string-array name="college_name_array">
+        <item>College Of Technology</item>
+        <item>College Of Agriculture</item>
+        <item>College Of Agri-Business Management</item>
+        <item>College Of Basic Sciences And Humanities</item>
+        <item>College Of Fisheries</item>
+        <item>College Of Community Science</item>
+        <item>College Of Veterinary And Animal Sciences</item>
+    </string-array>
+
+    <string-array name="book_language_array">
+        <item>Hindi</item>
+        <item>English</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="genre_array">
+        <item>Action and Adventure</item>
+        <item>Autobiography</item>
+        <item>Biography</item>
+        <item>Comedy</item>
+        <item>Comics</item>
+        <item>Competitive Exams</item>
+        <item>Fiction</item>
+        <item>Horror</item>
+        <item>Knowledge</item>
+        <item>Mystery</item>
+        <item>Mythology</item>
+        <item>Non-Fiction</item>
+        <item>Romance</item>
+        <item>Self Help</item>
+        <item>Science-Fiction</item>
+        <item>Superhero</item>
+        <item>Travel</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="quotes_array">
+        <item>"No two people ever read the same book"</item>
+        <item>"Knowing how to read and not reading is just like not knowing how to read"</item>
+        <item>"A room without books is like a body without a soul"</item>
+        <item>"Good books don’t give up all their secrets at once"</item>
+        <item>"Books are mirrors. You only see in them what you already have inside of you"</item>
+        <item>"A good book has no ending"</item>
+        <item>"You can borrow a book but you get to keep the ideas"</item>
+        <item>"Reading is to the mind what exercise is to the body"</item>
+        <item>"Don't judge a book by its movie"</item>
+    </string-array>
+
+    <string name="ad_id">ca-app-pub-4344088590604516~7332456421</string>
+    <string name="book_list_banner">ca-app-pub-4344088590604516/3748434639</string>
+    <string name="chat_list_banner">ca-app-pub-4344088590604516/3274835491</string>
+    <string name="request_list_banner">ca-app-pub-4344088590604516/2211382874</string>
+    <string name="remove_interstitial">ca-app-pub-4344088590604516/9892129011</string>
+    <string name="book_interstitial">ca-app-pub-4344088590604516/3081386071</string>
+
+
+
+</resources>

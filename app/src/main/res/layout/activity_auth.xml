@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLaunchBackground"
+    tools:context="com.futurepastapps.pantnagarbookexchange.AuthActivity">
+
+    <Button
+        android:id="@+id/authLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/buttonbackground"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:text="Have an account"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/authCreateAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="New Here?"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/authCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonbackground"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:text="Create a new account"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/authLogin"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/applogo" />
+</RelativeLayout>

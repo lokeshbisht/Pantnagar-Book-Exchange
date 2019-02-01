@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.futurepastapps.pantnagarbookexchange.DonateBookActivity">
+
+    <include layout="@layout/appbar"
+        android:id="@+id/donateBookBar" />
+
+    <TextView
+        android:id="@+id/donateBookText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donateBookBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:text="If you want to donate a book to the student's library you can message us and we will contact you."
+        android:textAlignment="center"
+        android:textColor="@color/colorHeading"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/donateBookMessageUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/donateBookText2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonbackground"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:text="Message Us"
+        android:textColor="@color/colorButtonText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/donateBookText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donateBookText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="The books that you donate will become available for everyone to read."
+        android:textAlignment="center"
+        android:textColor="@color/colorHeading"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

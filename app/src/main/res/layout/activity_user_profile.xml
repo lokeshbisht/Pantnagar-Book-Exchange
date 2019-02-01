@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.futurepastapps.pantnagarbookexchange.UserProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/userProfileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/userProfileBar"
+                layout="@layout/appbar" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userProfileDp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/userProfileBar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/defaultuser" />
+
+            <TextView
+                android:id="@+id/userProfileNameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/userProfileUserName"
+                android:layout_below="@+id/userProfileDp"
+                android:layout_marginTop="20dp"
+                android:text="Username"
+                android:textColor="@color/colorDisabledText" />
+
+            <TableRow
+                android:id="@+id/hr1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/userProfileNameView"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/userProfileUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/userProfileBooksView"
+                android:layout_below="@+id/userProfileNameView"
+                android:layout_marginEnd="20dp"
+                android:singleLine="true"
+                android:text="Username"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeading"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/userProfileBooksView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/userProfileBooks"
+                android:layout_below="@+id/userProfileUserName"
+                android:layout_marginTop="20dp"
+                android:text="Number of books"
+                android:textColor="@color/colorDisabledText" />
+
+            <TableRow
+                android:id="@+id/hr3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/userProfileBooksView"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/userProfileBooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr3"
+                android:layout_centerHorizontal="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeading"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/userProfileCollegeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/userProfileBooks"
+                android:layout_below="@+id/userProfileBooks"
+                android:layout_marginTop="20dp"
+                android:text="College"
+                android:textColor="@color/colorDisabledText" />
+
+            <TableRow
+                android:id="@+id/hr2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/userProfileCollegeView"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/userProfileCollege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr2"
+                android:layout_centerHorizontal="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:text="Not Specified"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/userProfileSendMessageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/userProfileViewBooksButton"
+                android:layout_below="@+id/userProfileCollege"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonbackground"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:text="Send Messsage"
+                android:textColor="@color/colorButtonText"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/userProfileViewBooksButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userProfileSendMessageButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonbackground"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:text="View All Books"
+                android:textColor="@color/colorButtonText"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/userProfileImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorFullImageBackground"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/userProfileFullImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/defaultuser" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProfileCloseImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

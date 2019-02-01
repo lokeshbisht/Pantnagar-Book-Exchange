@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/myRequestsOption"
+        android:title="My Requests" />
+
+    <item
+        android:id="@+id/donateBookOption"
+        android:title="Donate a book" />
+
+    <item
+        android:id="@+id/tellAFriendOption"
+        android:title="Tell a friend" />
+
+    <item
+        android:id="@+id/rateUsOption"
+        android:title="Rate Us" />
+
+    <item
+        android:id="@+id/logoutOption"
+        android:title="Logout" />
+
+</menu>

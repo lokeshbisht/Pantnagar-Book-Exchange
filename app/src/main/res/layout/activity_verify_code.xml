@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.futurepastapps.pantnagarbookexchange.VerifyCodeActivity">
+
+    <RelativeLayout
+        android:id="@+id/sendingCodeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/codeSentLayout"
+        android:background="@color/colorBackground"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/verifyCodeSendingProgress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:scrollbarSize="100dp" />
+
+        <TextView
+            android:id="@+id/verifyCodeSendingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Sending verification code to your number"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/verifyBar"
+        layout="@layout/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verifyBar"></include>
+
+    <RelativeLayout
+        android:id="@+id/codeSentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/verifyBar"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/verifytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="41dp"
+            android:text="A verification code has been sent to your number. Enter it to continue. "
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/verificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verifytext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="33dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="6">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:hint="Verification Code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/verifyCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verificationCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/buttonbackground"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="Verify Code"
+            android:textColor="@color/colorButtonText"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/verifyresendcode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:text="Didn't get the code?"
+            android:textColor="@color/colorwarning" />
+
+        <Button
+            android:id="@+id/verifyresendcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/buttonbackground"
+            android:enabled="false"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="Resend Code"
+            android:textColor="@color/colorButtonText"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/verifyTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="00:00"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/verifyProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/verifyTimer"
+            android:layout_below="@+id/verifyCode"
+            android:layout_marginTop="11dp"
+            android:fitsSystemWindows="false"
+            android:keepScreenOn="false"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.futurepastapps.pantnagarbookexchange.AboutBookActivity">
+
+        <include
+            android:id="@+id/aboutBookBar"
+            layout="@layout/appbar"></include>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/aboutBookBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/aboutBookNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/aboutBookBookName"
+                    android:layout_marginTop="20dp"
+                    android:text="Book Name"
+                    android:textColor="@color/colorDisabledText" />
+
+                <TableRow
+                    android:id="@+id/hr"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/aboutBookNameView"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/aboutBookBookName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/aboutBookAuthorView"
+                    android:layout_below="@+id/hr"
+                    android:layout_marginEnd="20dp"
+                    android:maxLines="3"
+                    android:text="Book Name"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorHeading"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/aboutBookAuthorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutBookBookName"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Author Name"
+                    android:textColor="@color/colorDisabledText" />
+
+                <TableRow
+                    android:id="@+id/hr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/aboutBookAuthorView"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/aboutBookAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/aboutBookAuthorView"
+                    android:layout_below="@+id/aboutBookAuthorView"
+                    android:layout_marginEnd="20dp"
+                    android:maxLines="2"
+                    android:text="Author Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorHeading"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/aboutBookGenreLanguageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutBookAuthor"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Genre | Language"
+                    android:textColor="@color/colorDisabledText" />
+
+                <TableRow
+                    android:id="@+id/hr4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/aboutBookGenreLanguageView"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/aboutBookGenreAndLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hr4"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:text="Genre | Language"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorHeading"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/aboutBookDescriptionView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutBookGenreAndLanguage"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Description"
+                    android:textColor="@color/colorDisabledText" />
+
+                <TableRow
+                    android:id="@+id/hr6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/aboutBookDescriptionView"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/aboutBookDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hr6"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLength="144"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text="Description"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorHeading"
+                    android:textSize="23sp" />
+
+                <ImageView
+                    android:id="@+id/aboutBookShowMore"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/aboutBookDescription"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/showmore" />
+
+                <TextView
+                    android:id="@+id/aboutBookAvailabilityView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutBookDescription"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Availability"
+                    android:textColor="@color/colorDisabledText" />
+
+                <TableRow
+                    android:id="@+id/hr8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/aboutBookAvailabilityView"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/aboutBookAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hr8"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLength="256"
+                    android:text="Availability"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorHeading"
+                    android:textSize="23sp" />
+
+                <Button
+                    android:id="@+id/aboutBookRequestButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutBookAvailability"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonbackground"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:text="Request Book"
+                    android:textColor="@color/colorButtonText"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/aboutBookUserProfileButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutBookRequestButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/buttonbackground"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:text="Go to user profile"
+                    android:textColor="@color/colorButtonText"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/aboutBookRequestProgress"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/aboutBookRequestButton"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/aboutBookRequestButton"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+</RelativeLayout>

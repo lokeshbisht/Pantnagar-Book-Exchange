@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.futurepastapps.pantnagarbookexchange.MyRequestsActivity">
+
+    <include layout="@layout/appbar"
+        android:id="@+id/myRequestsBar" />
+
+    <com.futurepastapps.pantnagarbookexchange.EmptyRecyclerView
+        android:id="@+id/myRequestsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myRequestsBar"
+        android:background="@color/colorBackground" />
+
+    <RelativeLayout
+        android:id="@+id/myRequestsEmptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myRequestsBar"
+        android:background="@color/colorBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/myRequestsEmptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="You have not made any book requests"
+            android:textAlignment="center"
+            android:textColor="@color/colorHeading"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

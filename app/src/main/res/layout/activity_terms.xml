@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.futurepastapps.pantnagarbookexchange.TermsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground">
+
+            <TextView
+                android:id="@+id/termsHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Terms of use"
+                android:textColor="@color/colorHeading"
+                android:textSize="40sp" />
+
+            <TableRow
+                android:id="@+id/hr1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/termsHeading"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/termsFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="1)"
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/termsFirstText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/termsFirst"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/termsFirst"
+                android:text="This app is meant to be used as a platform for sharing your books with other students and borrowing books from them."
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TableRow
+                android:id="@+id/hr2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/termsFirstText"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/termsSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="2)"
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/termsSecondText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/termsSecond"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/termsSecond"
+                android:text="Use of any inappropriate language is not acceptable. Uploading any explicit content will be dealt with seriously."
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TableRow
+                android:id="@+id/hr3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/termsSecondText"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/termsThird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr3"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="3)"
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/termsThirdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/termsThird"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/termsThird"
+                android:text="Providing false information with the aim of wasting time of others is not a good idea. Please provide only genuine information."
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TableRow
+                android:id="@+id/hr4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/termsThirdText"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/termsFourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr4"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="4)"
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/termsFourthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/termsFourth"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/termsFourth"
+                android:text="Books are to be dealt with care. You must try to return books within fifteen days and if you can't you must communicate with the owner of the book."
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TableRow
+                android:id="@+id/hr5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/termsFourthText"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/termsFifth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr5"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="5)"
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/termsFifthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/termsFifth"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/termsFifth"
+                android:text="The app also has a chatting feature that lets's you chat with other users. Messaging any abusive or inappropriate content will not be tolerated. We won't be able to read your messages but if any user reports us about such messages, your act will be punishable."
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TableRow
+                android:id="@+id/hr6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/termsFifthText"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/termsSixth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr6"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="6)"
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/termsSixthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/termsSixth"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/termsSixth"
+                android:text="So you are still here, huh. Just remember, we have your number. So if you are found guilty of violating any of the above terms you are punishable under cyber law. Yeah, that's possible. So just use the app for what it is meant to be used for."
+                android:textColor="@color/colorHeading"
+                android:textSize="20sp" />
+
+            <TableRow
+                android:id="@+id/hr7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/termsSixthText"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/termsGotItButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttonbackground"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:text="Okay , Got It"
+                android:textColor="@color/colorButtonText"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

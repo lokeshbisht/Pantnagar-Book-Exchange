@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLaunchBackground"
+    tools:context="com.futurepastapps.pantnagarbookexchange.AboutAppActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/fonts"
+                android:textAlignment="center"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:text="Welcome to Pantnagar Book Exchange"
+                android:textColor="@color/colorAboutText"
+                android:textSize="40sp" />
+
+
+            <TableRow
+                android:id="@+id/hr"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/heading"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/browseBooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/hr"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/fonts"
+                android:text="Browse books"
+                android:textColor="@color/colorAboutText"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/browseBooksText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/browseBooks"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Browse through books added by other users and books in the student library."
+                android:textColor="@color/colorHeading"
+                android:textSize="22sp" />
+
+            <TableRow
+                android:id="@+id/hr1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/browseBooksText"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/requestBooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hr1"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/fonts"
+                android:textColor="@color/colorAboutText"
+                android:text="Request books"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/requestBooksText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/requestBooks"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Request books that you want to read.You can only request books that are available(obviously).\nIf your request is accepted, you will get a notificaton."
+                android:textColor="@color/colorHeading"
+                android:textSize="22sp" />
+
+
+            <TableRow
+                android:id="@+id/hr2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/requestBooksText"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/addBooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hr2"
+                android:layout_marginTop="15dp"
+                android:text="Add your books"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/fonts"
+                android:textColor="@color/colorAboutText"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/addBooksText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addBooks"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Add books you have to your book list so others can request books from you."
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/colorHeading"
+                android:textSize="22sp" />
+
+
+            <TableRow
+                android:id="@+id/hr3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/addBooksText"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hr3"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/fonts"
+                android:textColor="@color/colorAboutText"
+                android:text="Chat with users"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/chatText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chat"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="You can chat with other users with the app's chatting feature and talk whatever you want to, we don't care(unless no one gets offended)."
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/colorHeading"
+                android:textSize="22sp" />
+
+
+            <TableRow
+                android:id="@+id/hr4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/chatText"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/donate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hr4"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/fonts"
+                android:textColor="@color/colorAboutText"
+                android:text="Donate books"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/donateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/donate"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="You can donate books to The Student Library. Books in the student library are available for everyone to read."
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/colorHeading"
+                android:textSize="22sp" />
+
+            <TableRow
+                android:id="@+id/hr5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/donateText"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent" />
+
+
+            <TextView
+                android:id="@+id/keepSharing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr5"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/fonts"
+                android:textColor="@color/colorAboutText"
+                android:text="Keep reading and keep sharing"
+                android:textSize="40sp"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TableRow
+                android:id="@+id/hr6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/keepSharing"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/aboutAppLetsGoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hr6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonbackground"
+                android:paddingEnd="15sp"
+                android:paddingStart="15sp"
+                android:text="Alright , Let's go"
+                android:textColor="@color/colorButtonText"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

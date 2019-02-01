@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.futurepastapps.pantnagarbookexchange.EditBookActivity">
+
+    <include layout="@layout/appbar"
+        android:id="@+id/editBookBar" />
+
+    <ScrollView
+        android:id="@+id/editBookView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editBookBar"
+        android:background="@color/colorBackground">
+
+        <RelativeLayout
+            android:id="@+id/editBookLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editBookBookName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/editBookAuthorName"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Book name"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editBookAuthorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/editBookBookName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Author Name"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.reginald.editspinner.EditSpinner
+                android:id="@+id/editBookGenre"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editBookAuthorName"
+                android:layout_marginEnd="200dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Genre"
+                android:maxLength="50"
+                android:singleLine="true"
+                app:dropDownDrawable="@drawable/picker"
+                app:dropDownDrawableHeight="25dp"
+                app:dropDownDrawableSpacing="15dp"
+                app:dropDownDrawableWidth="25dp" />
+
+            <com.reginald.editspinner.EditSpinner
+                android:id="@+id/editBookLanguage"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editBookGenre"
+                android:layout_alignBottom="@+id/editBookGenre"
+                android:layout_alignEnd="@+id/editBookDescription"
+                android:hint="Language"
+                android:maxLength="50"
+                android:singleLine="true"
+                app:dropDownDrawable="@drawable/picker"
+                app:dropDownDrawableHeight="25dp"
+                app:dropDownDrawableSpacing="15dp"
+                app:dropDownDrawableWidth="25dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editBookDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editBookLanguage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="144">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Book Description(optional)"
+                    android:inputType="textCapSentences" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/editBookSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editBookDescription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonbackground"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:text="Save Changes"
+                android:textColor="@color/colorButtonText"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/editBookProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editBookSaveButton"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.futurepastapps.pantnagarbookexchange.BooksFragment">
+
+    <RelativeLayout
+        android:id="@+id/booksMainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground">
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/booksBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/booksEmptyLayout"
+            android:visibility="gone"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/book_list_banner">
+
+        </com.google.android.gms.ads.AdView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/booksLayoutSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/booksView"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:src="@drawable/searchwhite"
+            android:visibility="gone" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/booksLayoutSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/booksView"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@+id/booksLayoutSearch"
+            android:clickable="true"
+            android:src="@drawable/sortwhite"
+            android:visibility="gone" />
+
+        <com.futurepastapps.pantnagarbookexchange.EmptyRecyclerView
+            android:id="@+id/booksView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/booksBanner"
+            android:background="@color/colorBackground"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/booksLayoutSearchText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/booksView"
+            android:layout_alignParentBottom="false"
+            android:layout_alignTop="@+id/booksLayoutClose"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@+id/booksLayoutClose"
+            android:background="@drawable/buttonbackground"
+            android:hint="Search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorHeading"
+            android:textColorHint="@android:color/white"
+            android:visibility="gone"
+            android:textCursorDrawable="@null"/>
+
+        <ImageView
+            android:id="@+id/booksLayoutClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/booksView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/buttonbackground"
+            android:padding="5dp"
+            android:src="@drawable/closesearch"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/booksEmptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/emptyRecyclerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:text="No books have been added yet"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/emptyRecyclerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:src="@drawable/add"
+                android:visibility="visible"
+                app:fabSize="normal" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.futurepastapps.pantnagarbookexchange.AboutUsActivity">
+
+    <include
+        android:id="@+id/aboutUsBar"
+        layout="@layout/appbar" />
+
+    <TextView
+        android:id="@+id/aboutUsAboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/userProfileUserName"
+        android:layout_below="@+id/aboutUsBar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="About Us"
+        android:textColor="@color/colorDisabledText" />
+
+    <TableRow
+        android:id="@+id/hr1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/aboutUsAboutUs"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/aboutUsAboutUsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/aboutUsAboutUs"
+        android:layout_below="@+id/hr1"
+        android:singleLine="false"
+        android:text="The students library is made up of books donated by students like you.Anyone can read these books."
+        android:textAlignment="textStart"
+        android:textColor="@color/colorHeading"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/aboutUsBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/aboutUsAboutUsText"
+        android:layout_below="@+id/aboutUsAboutUsText"
+        android:layout_marginTop="20dp"
+        android:text="Number Of Books in the Library"
+        android:textColor="@color/colorDisabledText" />
+
+    <TableRow
+        android:id="@+id/hr2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/aboutUsBooks"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/aboutUsNumberOfBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hr2"
+        android:layout_centerHorizontal="false"
+        android:layout_marginEnd="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="5sp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/colorHeading"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/aboutUsViewBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutUsNumberOfBooks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonbackground"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:text="View All Books"
+        android:textColor="@color/colorButtonText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/aboutUsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutUsViewBooks"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="If you have any issue , suggestion , feedback or if you want to donate a book you can message us."
+        android:textAlignment="center"
+        android:textColor="@color/colorHeading"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/aboutUsMessageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutUsText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttonbackground"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:text="Message Us"
+        android:textColor="@color/colorButtonText"
+        android:textSize="18sp" />
+
+</RelativeLayout>
